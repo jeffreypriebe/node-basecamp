@@ -3,7 +3,9 @@
 
 A wrapper for the Basecamp Classic API (currently only supports read methods). Originally Authored by Mike Robinson (http://github.com/akamike)
 
-## Now on NPM
+
+
+## Now on NPM!
 ```
 npm install basecamp-classic
 ```
@@ -101,6 +103,9 @@ module.exports = function(req, res) {
 ### files
 
 * `files.fromProject(projectId, offset, callback)`
+
+### for more details:
+See the GET endpoints listed on http://github.com/37signals/basecamp-classic-api
 
 ## TODO
 
