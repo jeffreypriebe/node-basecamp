@@ -1,34 +1,35 @@
 # node-basecamp 
-##(API wrapper for Node.js)
+###An API wrapper for node/express
 
 A wrapper for the Basecamp Classic API (currently only supports read methods). Originally Authored by Mike Robinson (http://github.com/akamike)
 
 ## Now on NPM
-  npm install basecamp-classic
-
+```
+npm install basecamp-classic
+```
 
 ## Example usage
-```
-    var Basecamp = require('basecamp-classic');
+```js
+var Basecamp = require('basecamp-classic');
 
-    var bc = new Basecamp(
-      'https://YOUR_COMPANY.basecamphq.com',
-      'YOUR_API_KEY'
-    );
+var bc = new Basecamp(
+  'https://YOUR_COMPANY.basecamphq.com',
+  'YOUR_API_KEY'
+);
 
-    module.exports = function(req, res) {
-      bc.todoLists.all(function(err, lists){
-        if(err) {
-          console.log(err);
-          res.send('there was a problem');
-        } else {
-          // render the todo template and pass it our lists object
-          res.render('todo', {
-            todoLists: lists
-          });
-        }
+module.exports = function(req, res) {
+  bc.todoLists.all(function(err, lists){
+    if(err) {
+      console.log(err);
+      res.send('there was a problem');
+    } else {
+      // render the todo template and pass it our lists object
+      res.render('todo', {
+        todoLists: lists
       });
     }
+  });
+}
 ```
 
 ## Supported methods
@@ -103,7 +104,7 @@ A wrapper for the Basecamp Classic API (currently only supports read methods). O
 
 ## TODO
 
--[x] Publish to npm
--[ ] Tests for read methods
--[ ] Create write methods
+- [x] Publish to npm
+- [ ] Tests for read methods
+- [ ] Create write methods
 
