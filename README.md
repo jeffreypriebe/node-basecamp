@@ -5,23 +5,23 @@ A wrapper for the Basecamp Classic API (currently only supports read methods).
 
 ## Example usage
 
-    var http = require('http'),
-        Basecamp = require('./lib/basecamp');
+    Basecamp = require('basecamp');
 
     var bc = new Basecamp(
       'https://YOUR_COMPANY.basecamphq.com',
-      'API_KEY_HERE'
+      'YOUR_API_KEY'
     );
 
-    http.createServer(function (req, res) {
-      bc.people.me(function (err, me) {
-        if (err)
-          res.end('Could not load your profile!');
-
-        res.end('You are logged in as ' + me.firstName + ' ' + me.lastName);
+    module.exports = function(req,res) {
+      bc.todoLists.all(function(err, lists){
+        if(err) {
+          console.log(err)
+          res.send('there was a problem')
+        } else {
+          res.render('todo', todoLists: lists )
+        }
       });
-    }).listen(8080);
-    console.log('Server running at http://localhost:8080/');
+    }
 
 ## Supported methods
 
