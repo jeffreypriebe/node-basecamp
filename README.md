@@ -1,12 +1,11 @@
 # node-basecamp 
 ##(API wrapper for Node.js)
-### Originally Authored by Mike Robinson (http://github.com/akamike)
 
-A wrapper for the Basecamp Classic API (currently only supports read methods).
+A wrapper for the Basecamp Classic API (currently only supports read methods). Originally Authored by Mike Robinson (http://github.com/akamike)
 
 ## Example usage
 
-    Basecamp = require('basecamp');
+    var Basecamp = require('basecamp-classic');
 
     var bc = new Basecamp(
       'https://YOUR_COMPANY.basecamphq.com',
