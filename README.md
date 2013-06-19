@@ -1,4 +1,5 @@
-# node-basecamp (API wrapper for Node.js)
+# node-basecamp 
+##(API wrapper for Node.js)
 ### Originally Authored by Mike Robinson (http://github.com/akamike)
 
 A wrapper for the Basecamp Classic API (currently only supports read methods).
@@ -12,13 +13,16 @@ A wrapper for the Basecamp Classic API (currently only supports read methods).
       'YOUR_API_KEY'
     );
 
-    module.exports = function(req,res) {
+    module.exports = function(req, res) {
       bc.todoLists.all(function(err, lists){
         if(err) {
-          console.log(err)
-          res.send('there was a problem')
+          console.log(err);
+          res.send('there was a problem');
         } else {
-          res.render('todo', todoLists: lists )
+          // render the todo template and pass it our lists object
+          res.render('todo', {
+            todoLists: lists
+          });
         }
       });
     }
