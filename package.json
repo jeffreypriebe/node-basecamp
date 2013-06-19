@@ -1,24 +1,32 @@
 {
-  "name": "basecamp",
-  "version": "0.1.0",
-  "description": "Basecamp API wrapper",
+  "name": "basecamp-classic",
+  "version": "0.0.1",
+  "description": "Basecamp Classic API wrapper for node/express",
   "keywords": [
     "api",
     "wrapper",
     "basecamp"
   ],
-  "homepage": "http://github.com/studiolift/node-basecamp",
-  "author": {
-    "name": "Mike Robinson",
-    "url": "http://github.com/akamike"
-  },
-  "main": "./lib/basecamp",
+  "homepage": "http://github.com/colpanik/node-basecamp",
+  "author": "Kerry Gilbert (http://github.com/colpanik)",
+  "contributors": [
+    "Mike Robinson (original Author)"
+  ],
+  "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "http://github.com/studiolift/node-basecamp.git"
+    "url": "http://github.com/colpanik/node-basecamp.git"
   },
   "dependencies": {
-    "xml2js" : ">=0.1.8"
+    "xml2js": ">=0.1.8"
   },
-  "engines" : { "node" : ">=0.4.7" }
+  "engines": {
+    "node": ">=0.4.7"
+  },
+  "readmeFilename": "README.md",
+  "gitHead": "c7f87e6fc3c2e69b4e48921540c036d627c7279a",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
 }

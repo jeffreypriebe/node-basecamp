@@ -1,6 +1,7 @@
 # node-basecamp (API wrapper for Node.js)
+### Originally Authored by Mike Robinson (http://github.com/akamike)
 
-A wrapper for the Basecamp API (currently only supports read methods).
+A wrapper for the Basecamp Classic API (currently only supports read methods).
 
 ## Example usage
 
