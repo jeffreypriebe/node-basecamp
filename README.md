@@ -3,8 +3,12 @@
 
 A wrapper for the Basecamp Classic API (currently only supports read methods). Originally Authored by Mike Robinson (http://github.com/akamike)
 
-## Example usage
+## Now on NPM
+  npm install basecamp-classic
 
+
+## Example usage
+```
     var Basecamp = require('basecamp-classic');
 
     var bc = new Basecamp(
@@ -25,6 +29,7 @@ A wrapper for the Basecamp Classic API (currently only supports read methods). O
         }
       });
     }
+```
 
 ## Supported methods
 
@@ -98,5 +103,7 @@ A wrapper for the Basecamp Classic API (currently only supports read methods). O
 
 ## TODO
 
-* Write methods
-* Publish to npm
+-[x] Publish to npm
+-[ ] Tests for read methods
+-[ ] Create write methods
+
