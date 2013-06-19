@@ -1,5 +1,5 @@
-var basecamp = require('./lib/basecamp')
+var basecamp = require('./lib/basecamp');
 
-module.exports = function() {
-  return new basecamp();
+module.exports = function(url, apiKey) {
+  return new basecamp(url, apiKey);
 }
