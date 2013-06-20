@@ -1,6 +1,4 @@
 # node-basecamp 
-###An API wrapper for node/express
-
 A wrapper for the Basecamp Classic API (currently only supports read methods). Originally Authored by Mike Robinson (http://github.com/akamike)
 
 
