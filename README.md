@@ -1,6 +1,5 @@
 # node-basecamp 
-A wrapper for the Basecamp Classic API (currently only supports read methods). Originally Authored by Mike Robinson (http://github.com/akamike)
-
+A wrapper for the Basecamp Classic API (currently only supports read methods). Originally authored by the folks at StudioLift (https://github.com/studiolift).
 
 
 ## Now on NPM!
